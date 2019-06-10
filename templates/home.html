@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose The Best</title>
+
+    <style>
+        /* body{
+            background-color: lightblue;
+        } */
+
+        img {
+            float: left;
+            margin-left: 20%;
+        }
+
+        h1 {
+            margin-left: 30%;
+            font-family: 'Segoe Script';
+        }
+
+        #d2 {
+            float: left;
+            margin-top: 10%;
+            margin-left: 15%;
+            margin-right: 20%;
+        }
+
+        #d3 {
+            float: left;
+            margin-top: 10%;
+            margin-right: 20%;
+        }
+
+        #d4 {
+            float: left;
+            margin-top: 10%;
+            margin-right: 20%;
+        }
+
+        .l1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .l2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .l3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        button {
+            /* font-size: 24px; */
+            margin-top: 5%;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            background-color: #f44336;
+            margin-bottom: 10%;
+
+        }
+
+        input {
+            font-size: 24px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1"><img src="oyd.jpg" alt="OYD LOGO">
+        <h1><span>O</span>n Your Door Nepal(<span>O</span>YD)</h1>
+    </div>
+    <form action="{% url 'convert_length' %}">
+
+        <div id="d2" class="l1">
+            <button disabled="disabled">List 1</button><br>
+            <input type="radio" name="rad1" value="A" id="A">A<br>
+            <input type="radio" name="rad1" value="B" id="B">B<br>
+            <input type="radio" name="rad1" value="C" id="C">C<br>
+            <!-- <input type="button" onclick="myFunction()" value="Send order"> -->
+            <!-- <input type="text" id="order" size="50"> -->
+        </div>
+
+        <div id="d3" class="l2">
+            <button disabled="disabled">List 2</button><br>
+            <input type="radio" name="rad2" value="D" id="D">D<br>
+            <input type="radio" name="rad2" value="E" id="E">E<br>
+            <input type="radio" name="rad2" value="F" id="F">F<br>
+            <!-- <input type="button" onclick="myFunction()" value="Send order"> -->
+        
+        </div>
+        <div id="d4" class="l3">
+            <button disabled="disabled">List 3</button><br>
+            <input type="radio" name="rad3" value="G" id="G">G<br>
+            <input type="radio" name="rad3" value="H" id="H">H<br>
+            <input type="radio" name="rad3" value="I" id="I">I<br>
+            <!-- <input type="button" onclick="myFunction()" value="Send order"> -->
+      
+        </div>
+        <!-- <script>
+            function myFunction() {
+                var radio = document.forms[0];
+                var txt = "";
+                var i;
+                for (i = 0; i < radio.length; i++) {
+                    if (radio[i].checked) {
+                        txt = txt + radio[i].value + " ";
+                    }
+                }
+                document.getElementById("order").value =txt;
+            }
+        </script> -->
+        <button type="submit" name="submit" style="margin-left: 42%">Submit</button>
+    </form>
+</body>
+
+</html>
